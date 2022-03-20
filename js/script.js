@@ -8,6 +8,8 @@ const $temperature = $(".temperature")
 const $feels = $(".feels")
 const $condition = $(".condition")
 const apikey = "c2e2c691dca22443281625adb550280f"
+const $select = $("select")
+console.log($select)
 
 const $loc = $("#loc")
 const $temp = $("#temp") 
@@ -38,5 +40,8 @@ $button.on("click", () => {
 
     
 })
+if (window.navigator.geolocation) {
+    // Geolocation available
+   } 
 
 // question how to append text to existing text in a div without using span

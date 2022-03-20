@@ -2,16 +2,30 @@
     --main-color: #6a7d74;
     --text-color: #e3e7e5;
     --title-color:  #1b1917;
+    --container-color:  #81768B;
 
 }
 body{
     background-color:  var(--main-color);
+    /* justify-content: center; */
 }
 h1{
     color: var(--title-color);
+    text-align: center;
 }
 div{
     color: var(--text-color);
     padding: 20px;
     font-size: 20px;
+}
+.container{
+    /* width: 90%; */
+    background-color: var(--container-color);
+}
+.input{
+    /* width: 90%; */
+    background-color: #e3e7e5;
+}
+#daysWeather{
+    padding: 0px !important;
 }
