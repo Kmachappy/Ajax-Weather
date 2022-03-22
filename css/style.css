@@ -1,13 +1,17 @@
 :root{
     --main-color: #6a7d74;
+    --pink-color: #A29199;
     --text-color: #e3e7e5;
-    --title-color:  #1b1917;
+    --title-color:  #3F4B45;
     --container-color:  #81768B;
 
 }
 body{
-    background-color:  var(--main-color);
+    background-color:  var(--pink-color);
     /* justify-content: center; */
+    width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
 h1{
     color: var(--title-color);
@@ -15,17 +19,47 @@ h1{
 }
 div{
     color: var(--text-color);
-    padding: 20px;
+    
     font-size: 20px;
 }
-.container{
+
+.weather{
+    padding: 20px;
     /* width: 90%; */
+    /* background-color: var(--container-color); */
+}
+.container{
     background-color: var(--container-color);
+    display: flex;
+    padding: 10px;
+}
+.box1{
+    background-color: #6a7d74;
+    
+}
+.box2{
+    background-color: #A29199;
 }
 .input{
+    padding: 20px;
     /* width: 90%; */
     background-color: #e3e7e5;
+    color: #3F4B45;
 }
 #daysWeather{
-    padding: 0px !important;
+    /* padding: 0px !important; */
+}
+.daystitle .days{
+    /* margin: 0px !important;
+    padding: 0px !important; */
+}
+.daystitle{
+    margin-top: 0px;
+    margin-top: 0px;
+}
+span{
+    color:#1b1917
+}
+.boxes{
+    background-color: ;
 }

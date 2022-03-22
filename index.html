@@ -10,28 +10,49 @@
   crossorigin="anonymous"></script>
     <script src="/js/script.js" defer></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Weather App</title>
+    <title>Ajax Weather App</title>
 </head>
 <body>
-    <h1>Weather App</h1>
-        <div class="container">
-        <div class="location">Weather for: <span id="loc"></span></div>
-        <div class="temperature">Temperature: <span id="temp"></span> </div>
-        <div class="feels">Feels Like: <span id="feel"></span></div>
-        <div class="condition">Condition: <span id="con"></span></div>
+    <h1>Ajax Weather App</h1>
+    <div class="container">
+        <div class="box1">
+            <div class="weather title-">Today's Forcast: <span id="date"></span></div>
+            <div class="weather">Weather for: <span id="loc"></span></div>
+            <div class="weather">Temperature: <span id="temp"></span> </div>
+            <div class="weather">Feels Like: <span id="feel"></span></div>
+            <div class="weather">Condition: <span id="con"></span></div>
+        </div>
+        <div class="box2">
+            <div class="weather title-">Today's Forcast: <span id="loc"></span></div>
+            <div class="weather">Weather for: <span id="loc"></span></div>
+            <div class="weather">Temperature: <span id="temp"></span> </div>
+            <div class="weather">Feels Like: <span id="feel"></span></div>
+            <div class="weather">Condition: <span id="con"></span></div>
+        </div>
     </div>
+    
     <div id="daysWeather">
+        <h1 class="daysTitle" style="margin-top: 0px;margin-bottom: 0px;"></h1>
 
+        <div class="days">
+
+        </div>
     </div>
+    
     <div class="input">
         <input type="text" placeholder="Enter Location" name="test" id="test">
-        <select name="dayselect" id="select" placeholder="days">
+        <select name="dayselect" id="select" required>
+            <!-- <option value="" selected>--days--</option> -->
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="2">3</option>
             <option value="4">4</option>
         </select>
-        <button>Get Weather Info</button>
+        <!-- <label for="pet-select">Choose a pet:</label> -->
+
+
+
+        <button>Get Weather Info</button >
         
     </div>
 </body>
